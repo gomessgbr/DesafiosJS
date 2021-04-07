@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible">
+        <meta name="viewport" content="width=device-width, initial-scale='1.0">
+        <title>Exercicio 7</title>
+    </head> 
+    
+    <body>
+        Nome: <input type="text" id="first-Name">
+        SobreNome: <input type="text" id="last-Name">
+
+        <button type="button" id="saudacao">Saudação</button>
+
+
+        <img src="https://raw.githubusercontent.com/gabrieldarezzo/helpjs-ravi/master/images/lampada.jpg" alt="lampada" id="click"
+        onmouseout="mouseOut()" onmouseover="mouseOver()" />
+
+
+        <h1 id="zica" >ZICAAAAAAA</h1>
+        <script>
+            function mouseOver(){
+                document.getElementById("click").src="https://github.com/gabrieldarezzo/helpjs-ravi/blob/master/images/lampada-on.jpg?raw=true";
+                document.getElementById("zica").style.color="red"
+            }  
+            function mouseOut(){
+                document.getElementById("click").src="https://raw.githubusercontent.com/gabrieldarezzo/helpjs-ravi/master/images/lampada.jpg";
+                document.getElementById("zica").style.color="black"
+            }  
+           
+                document.getElementById("saudacao").addEventListener("click",()=>{
+                    const first = document.getElementById('first-Name').value;
+                    const last = document.getElementById('last-Name').value;
+                    alert(`Olá ${first} ${last}`);
+                })
+
+            
+           
+        </script>
+    </body>
+
+</html>
