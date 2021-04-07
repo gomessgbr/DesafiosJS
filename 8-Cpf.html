@@ -12,10 +12,9 @@
 
         <script>
             function zica(){
-                const cpf=document.getElementById("cpf").value;
-                //console.log(cpf.slice(0,4))                               
+                const cpf=document.getElementById("cpf").value;                                            
                 //document.getElementById("txt").innerHTML = `${cpf[0]+cpf[1]+cpf[2]}.${cpf[3]+cpf[4]+cpf[5]}.${cpf[6]+cpf[7]+cpf[8]}-${cpf[9]+cpf[10]}`;
-                document.getElementById("txt").innerHTML=`${cpf.slice(0,3)}.${cpf.slice(3,3)}.${cpf.slice(6,3)}-${cpf.slice(9,2)}`
+                document.getElementById("txt").innerHTML=`${cpf.slice(0,3)}.${cpf.slice(3,-5)}.${cpf.slice(6,-2)}-${cpf.slice(9)}`
                 return;
             }
             
