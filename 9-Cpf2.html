@@ -3,16 +3,17 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width,initial-scale=1.0 ">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Exercicio 9</title>
     </head>
     <body>
-        CPF<input maxlength="14" id="cpfPoint"/>
+        CPF: <input maxlength="14" id="cpfPoint" onchange="zica2()"/>
         <p id="txt"></p>
         <script>
             function zica2(){
-                const cpf =document.getElementById("cpfPoint").value;
-                
+                const cpf =document.getElementById("cpfPoint").value;                
+                document.getElementById("txt").textContent=`${cpf.replaceAll('.',"").replace('-',"")}`
+
             }
         </script>
 
