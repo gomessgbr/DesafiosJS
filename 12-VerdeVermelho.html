@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv= "X-UA-COmpatible" content ="IE-edge" >
+        <meta name ="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Exercicio 12</title>
+    </head>
+    <body>
+        <style type ="text/css">
+        #quadrado{
+            height: 500px;
+            width:500px;
+            
+        }
+
+        </style>
+        <button type="button" id="verde" onclick="green()" > Verde</button>
+        <button type="button" id="vermelho" onclick="red()"> Vermelho</button>
+        <div id="quadrado" style ="background-color: #000;">
+            
+        </div>
+        <script>
+            function red(){
+                document.getElementById("quadrado").style="background-color: red";
+            }
+            function green(){
+                document.getElementById("quadrado").style="background-color:green";
+            }
+           
+        </script>
+    </body>
+</html>
