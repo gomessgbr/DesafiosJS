@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exercicio 8</title>
+    </head>
+    <body>
+        Cpf <input maxlength="11" id="cpf" onchange="zica()"/>
+        <p id="txt"></p>
+
+        <script>
+            function zica(){
+                const cpf=document.getElementById("cpf").value;
+                //console.log(cpf.slice(0,4))                               
+                //document.getElementById("txt").innerHTML = `${cpf[0]+cpf[1]+cpf[2]}.${cpf[3]+cpf[4]+cpf[5]}.${cpf[6]+cpf[7]+cpf[8]}-${cpf[9]+cpf[10]}`;
+                document.getElementById("txt").innerHTML=`${cpf.slice(0,3)}.${cpf.slice(3,3)}.${cpf.slice(6,3)}-${cpf.slice(9,2)}`
+                return;
+            }
+            
+        </script>
+    </body>
+</html>
