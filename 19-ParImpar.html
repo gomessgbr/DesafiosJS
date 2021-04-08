@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title> Exercicio 19  </title>
+    </head>
+    <body>
+        <p id="mostrar"></p>
+
+        <script>  
+            imparPar(3);        
+
+            function imparPar(num0){
+                if(num0%2!==0){
+                    return document.getElementById("mostrar").textContent="Impar";
+                } else if (num0%2===0){
+                    return document.getElementById("mostrar").textContent="Par";
+                }
+               
+            }
+
+        </script>
+    </body>
+</html>
