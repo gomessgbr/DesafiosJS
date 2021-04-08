@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edget">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Exercicio 17</title>
+    </head>
+    <body>
+        <input type="text" id="valor0"/>
+        <input type ="text" id="valor1"/>
+        <button type="submit" id="btn">Somar</button>
+        <p id="resultado"></p>
+
+
+        <script>
+            document.getElementById("btn").addEventListener("click",()=>{
+                const num0= parseInt(document.getElementById("valor0").value);
+                const num1= parseInt(document.getElementById("valor1").value);
+                soma(num0,num1);
+            })
+
+            function soma(valor0,valor1){                
+                if(valor0!==0 && valor1 !== 0){
+                    return(document.getElementById("resultado").textContent=(valor0+valor1));
+                }
+                else return (document.getElementById("resultado").textContent=(0));
+
+            }
+        </script>
+    </body>
+</html>
